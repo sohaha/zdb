@@ -8,10 +8,10 @@ import (
 	"github.com/sohaha/zdb/Driver/mssql"
 	"github.com/sohaha/zdb/Driver/mysql"
 	"github.com/sohaha/zdb/Driver/sqlite3"
-	"github.com/sohaha/zlsgo/zenv"
+	"github.com/sohaha/zlsgo/zutil"
 )
 
-var dbType = zenv.Getenv("dbtype", "sqlite3")
+var dbType = zutil.Getenv("dbtype", "sqlite3")
 
 type TestTableUser struct {
 	ID   int          `zdb:"id"`
